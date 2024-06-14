@@ -227,6 +227,15 @@ background-color: #404BBF;
 .peculiarities-item {
     flex-basis: calc((100% - 72px)/4);
 }
+
+.peculiarities-svg {
+    border: 1px solid #8e8f99;
+border-radius: 4px;
+width: 264px;
+height: 112px;
+background: #f4f4fd;
+}
+
 .peculiarities-subtitle {
 font-weight: 500;
 font-size: 20px;
@@ -241,6 +250,18 @@ line-height: 150%;
 letter-spacing: 0.02em;
 color: #434455;
 }
+
+.container-peculiaritie-svg {
+    border: 1px solid #8e8f99;
+border-radius: 4px;
+width: 264px;
+height: 112px;
+background: #f4f4fd;
+text-align: center;
+padding-top: 24px;
+margin-bottom: 8px;
+}
+
 
 /* ------------------------------------------------ */
 
@@ -276,6 +297,7 @@ margin-bottom: 72px;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
     background-color: #FFFFFF;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .people {
@@ -306,9 +328,33 @@ color: #434455;
 text-align: center;
 }
 
-.icon-svg {
-fill: #404bbf;
+.list-soc-svg {
+    display: flex;
+    gap: 24px;
+    padding: 8px 16px;
 }
+
+
+.item-soc-svg {
+    fill: #fff;
+    border-radius: 50%;
+display: block;
+border: none;
+cursor: pointer;
+background-color: #4d5ae5;
+width: 40px;
+height: 40px;
+text-align: center;
+padding: 12px;
+}
+
+.item-soc-svg:hover {
+    background-color: #31D0AA;
+    }
+    
+    .item-soc-svg:focus {
+        background-color: #31D0AA;
+    }
 
 /*--------------------our-portfolio---------------------------*/
 
@@ -389,7 +435,7 @@ transition: transform 250ms linear;
 }
 
 .container-footer {
-
+flex-direction: row;
 }
 
 .footer-logo {
@@ -413,11 +459,40 @@ max-width: 264px;
 }
 
 .studio {
-    font-family: "Raleway", sans-serif;
 font-weight: 700;
 font-size: 18px;
 line-height: 117%;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #f4f4fd;
+}
+
+.footer-soc {
+}
+
+.footer-text-soc {
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.02em;
+color: #fff;
+margin-bottom: 16px;
+}
+
+.footer-list-soc {
+    gap: 16px;
+    display: flex;
+}
+
+.item-soc-svg-footer {
+    border-radius: 50%;
+display: block;
+border: none;
+color: #fff;
+cursor: pointer;
+background-color: #4d5ae5;
+width: 40px;
+height: 40px;
+text-align: center;
+padding: 8px;
 }
